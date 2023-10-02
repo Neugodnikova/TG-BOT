@@ -43,6 +43,6 @@ jobs:
             sudo docker pull sashaneugodnikova/first_bot_2023
             sudo nohup docker run -d -it \
             -e API_TOKEN=${{ secrets.API_TOKEN }} \
-            -v /home/access/app_data:/app/app_data \
+            -v /root/app_data:/app/app_data \
             --name main_container \
             sashaneugodnikova/first_bot_2023
